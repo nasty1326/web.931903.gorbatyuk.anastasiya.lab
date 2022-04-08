@@ -1,0 +1,78 @@
+body {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .news {
+   background-color: paleturquoise;
+   width: 800px;
+   margin: auto;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 18px;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+ }
+ 
+ .news:hover {
+   background-color: #fd6969;
+ }
+ 
+ button {
+   color: white;
+   background: linear-gradient(to top, green, Lime);
+   box-shadow: 0 0 4px rgba(0,0,0,0.5);
+   border: 0px solid white;
+   padding: 10px;
+   margin-left: 40%;
+ }
+ 
+ button:hover {
+ background: green;
+ }
+ 
+ h1 {
+   margin: 10px;
+   font-size: 30px;
+ }
+ 
+ p{
+   margin: 10px;
+ }
+ 
+ .modal {
+   display: none; /*показ на странице*/
+   position: fixed; /*позиционирование*/
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(255, 255, 255, 0.781);
+ }
+ 
+ .modal-header {
+   padding: 10px 15px;
+   text-align: center;
+ }
+ 
+ .modal-body {
+   padding: 10px 15px;
+ }
+ 
+ .modal-content {
+   position: relative;
+   background: rgba(225, 255, 115, 1);
+   margin: auto;
+ 
+   width: 30%;
+ 
+   animation-name: animatetop;
+   animation-duration: 0.4s;
+ }
+ 
+ @keyframes animatetop {
+   from {top: -300px; opacity: 0;}
+   to {top: 0; opacity: 1;}
+ }
+ 
